@@ -25,8 +25,11 @@ remote teams.
 - **[Frozen 2027 prediction ledger](https://github.com/GrobeStreet/de-stress-lab/tree/main/predictions)**
   — time-stamped predictions that can be evaluated against future
   observations.
-- **[Research portfolio](https://destress-audit-automation.netlify.app)** —
-  capabilities, scope, and direct contact.
+- **[Research portfolio](https://robert-morong-research.netlify.app)** —
+  capabilities, scope, recruitment packet, and direct contact.
+- **[One-page research / AI résumé](https://robert-morong-research.netlify.app/packet/Robert_Morong_Research_AI_Resume.pdf)**
+  and **[two-page technical portfolio](https://robert-morong-research.netlify.app/packet/Robert_Morong_Technical_Portfolio.pdf)**
+  — concise materials for hiring teams and collaborators.
 
 ## What I work on
 
