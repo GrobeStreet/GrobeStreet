@@ -1,46 +1,64 @@
 # Robert “Bobby” Morong
 
-**AI-assisted research · reproducibility engineering · scientific red teaming**
+**Independent research engineer · AI evaluation · reproducibility · statistical red teaming**
 
-I build systems that turn difficult scientific and operational questions into
-inspectable code, tests, frozen artifacts, and falsifiable predictions. My
-work combines independent research, statistical stress testing, agentic
-automation, and evidence-first software engineering.
+I reproduce difficult quantitative claims, identify which assumptions carry
+them, and publish the code, evidence, and limits. My work spans cosmology and AI
+evaluation, with an emphasis on selection-aware statistics and inspectable
+research systems.
 
-I am open to research-engineering roles, applied-AI work, and serious lab
-collaborations—especially in the San Diego/UC San Diego community and with
-remote teams.
+[Research portfolio](https://robert-morong-research.netlify.app) ·
+[Public repositories](https://github.com/GrobeStreet?tab=repositories) ·
+[Contact](mailto:bobbyopsassistant@gmail.com?subject=Research%20collaboration)
 
-## Evidence you can inspect
+## Flagship research
 
-- **[De-Stress Lab](https://github.com/GrobeStreet/de-stress-lab)** — public
-  scientific implementation, tests, release history, and reproducibility
-  tooling.
-- **[Installable Python package](https://pypi.org/project/de-stress-lab/)** —
-  reusable diagnostics and repository-audit tooling.
-- **[Canonical reproduction DOI](https://doi.org/10.5281/zenodo.21632602)** —
-  frozen scientific evidence package and checksums.
-- **[Software release DOI](https://doi.org/10.5281/zenodo.21633731)** —
-  separately archived package release.
-- **[Frozen 2027 prediction ledger](https://github.com/GrobeStreet/de-stress-lab/tree/main/predictions)**
-  — time-stamped predictions that can be evaluated against future
-  observations.
-- **[Research portfolio](https://robert-morong-research.netlify.app)** —
-  capabilities, scope, recruitment packet, and direct contact.
-- **[One-page research / AI résumé](https://robert-morong-research.netlify.app/packet/Robert_Morong_Research_AI_Resume.pdf)**
-  and **[two-page technical portfolio](https://robert-morong-research.netlify.app/packet/Robert_Morong_Technical_Portfolio.pdf)**
-  — concise materials for hiring teams and collaborators.
+### [DESI DR2: where the late-time-evolution preference lives](https://github.com/GrobeStreet/de-stress-lab)
 
-## What I work on
+The compressed-likelihood preference for time-varying late-time behavior is
+reproducible, and LRG2 is load-bearing for its strength. Selection-aware
+calibration supplies the essential limit: conditional on a global fluctuation
+as strong as the observed one, concentration at LRG2 is **not** an additional
+independent anomaly. It is a localization result that directs follow-up.
 
-- statistical influence diagnostics and null calibration;
-- scientific software, provenance, and reproducible release systems;
-- agentic workflows with bounded execution and human oversight;
-- independent reproduction and adversarial review of research claims;
-- evidence packaging that makes AI-assisted work inspectable.
+**Evidence status:** reproduction and diagnostics complete; public package,
+result manifest, frozen prediction ledger, and two Zenodo archives available;
+independent human clean-room rerun pending.
 
-I do not ask institutions to validate mathematics by authority. I invite
-technically serious people to run the code, inspect the artifacts, challenge
-the methods, and decide what survives.
+### [ARC-AGI-2: how do we know a candidate program is right?](https://github.com/GrobeStreet/arc-agi-2-occam-baseline)
 
-**[Discuss a role or collaboration](mailto:bobby@trainingties.com?subject=Research%20or%20AI%20collaboration)**
+The corrected, pre-registered v2 analysis finds **32.8%** k=1 demonstration
+reliability. On ambiguous cases, minimum-description-length selection gains
+**11.1 points** over random selection, while the candidate oracle is only
+**3.7 points** above MDL. The linked frozen solver remains **0/167**.
+
+**Evidence status:** corrected v2 code, frozen machine-readable results, paper,
+figures, and publish-regardless record are public.
+
+### [MMLU: robustness is not calibration](https://github.com/GrobeStreet/mmlu-robustness-audit)
+
+Cyclically reordering answer choices exposes a distinct failure mode: a model
+can become more accurate and better calibrated while still changing its
+underlying answer on a majority of questions.
+
+**Evidence status:** transparent reconstruction of the documented July 2026
+protocol and frozen reported results. The repository does not claim
+byte-for-byte identity with the unavailable original raw run.
+
+## Verification trail
+
+- [Research portfolio and current public framing](https://robert-morong-research.netlify.app)
+- [Installable `de-stress-lab` package](https://pypi.org/project/de-stress-lab/)
+- [Canonical scientific reproduction archive](https://doi.org/10.5281/zenodo.21632602)
+- [Reusable software archive](https://doi.org/10.5281/zenodo.21633731)
+- [Frozen 2027 prediction ledger](https://github.com/GrobeStreet/de-stress-lab/tree/main/predictions)
+
+## What I build
+
+Selection-aware diagnostics, null calibration, reproducible scientific
+software, benchmark audits, frozen evidence packages, and bounded agentic
+workflows. The through-line is simple: **make consequential claims inspectable
+before making them impressive.**
+
+San Diego-based and open to research-engineering roles, applied-AI work, and
+serious lab collaborations. [Email me](mailto:bobbyopsassistant@gmail.com?subject=Research%20or%20AI%20collaboration).
