@@ -1,68 +1,67 @@
 # Robert “Bobby” Morong
 
-**Independent research engineer · AI evaluation · reproducibility · statistical red teaming**
+**Research engineer · AI evaluation · reproducibility · statistical red teaming**
 
-I reproduce difficult quantitative claims, identify which assumptions carry
-them, and publish the code, evidence, and limits. My work spans cosmology and AI
-evaluation, with an emphasis on selection-aware statistics and inspectable
-research systems.
+I test whether quantitative claims survive replication.
 
-[Research portfolio](https://robert-morong-research.netlify.app) ·
-[Public repositories](https://github.com/GrobeStreet?tab=repositories) ·
-[Contact](mailto:bobbyopsassistant@gmail.com?subject=Research%20collaboration)
+I reproduce published results, identify the assumptions carrying them, calibrate selection effects, and publish the evidence — including failed hypotheses, weakened claims, frozen artifacts, and explicit limits.
 
-## Flagship research
+**Cosmology · AI benchmarks · scientific software · statistical stress testing**
 
-### [DESI DR2: where the late-time-evolution preference lives](https://github.com/GrobeStreet/de-stress-lab)
+[Research portfolio](https://robert-morong-research.netlify.app) · [Repositories](https://github.com/GrobeStreet?tab=repositories) · [Email](mailto:bobbyopsassistant@gmail.com?subject=Research%20collaboration)
 
-The compressed-likelihood preference for time-varying late-time behavior is
-reproducible, and LRG2 is load-bearing for its strength. Selection-aware
-calibration supplies the essential limit: conditional on a global fluctuation
-as strong as the observed one, concentration at LRG2 is **not** an additional
-independent anomaly. It is a localization result that directs follow-up.
+## Start here
 
-**Evidence status:** reproduction and diagnostics complete; public package,
-result manifest, frozen prediction ledger, and two Zenodo archives available;
-independent human clean-room rerun pending.
+### [DESI DR2 — scientific reproduction & stress test](https://github.com/GrobeStreet/de-stress-lab)
 
-### [ARC-AGI-2: how do we know a candidate program is right?](https://github.com/GrobeStreet/arc-agi-2-occam-baseline)
+**Result:** the published compressed-likelihood preference for evolving dark energy reproduces, but much of its strength is LRG2-sensitive. A 5,000-mock selection calibration shows that the localization at LRG2 is **not** additional independent evidence once the global fluctuation is conditioned on.
 
-The corrected v2 analysis finds **32.8%** k=1 demonstration reliability. On
-ambiguous cases, minimum-description-length selection gains **11.1 points** over
-random selection, while the candidate oracle is only **3.7 points** above MDL.
-The linked frozen solver remains **0/167**.
+**Receipts:** [software DOI](https://doi.org/10.5281/zenodo.21633731) · [scientific archive DOI](https://doi.org/10.5281/zenodo.21632602) · [PyPI](https://pypi.org/project/de-stress-lab/) · [ReproHack Paper #108](https://www.reprohack.org/paper/108/) · [CI](https://github.com/GrobeStreet/de-stress-lab/actions) · [frozen result manifest](https://github.com/GrobeStreet/de-stress-lab/blob/main/RESULTS_MANIFEST.json)
 
-**Evidence status:** corrected v2 code, frozen machine-readable results, paper,
-figures, and a pre-specified publish-regardless record are public.
+**Verification status:** analysis, tests, provenance, and arXiv package complete; independent human clean-room execution is actively being sought.
 
-### [MMLU: option-order robustness](https://github.com/GrobeStreet/mmlu-robustness-audit)
+---
 
-Cyclically reordering answer choices exposes a distinct robustness failure mode:
-the regenerated public harness changes its underlying answer on roughly **78%**
-of questions under both bf16 and fp32, while accuracy on flipping questions
-remains near chance.
+### [MMLU — option-order robustness audit](https://github.com/GrobeStreet/mmlu-robustness-audit)
 
-**Evidence status:** Qwen regeneration complete with **partial metric agreement**.
-Headline accuracy and the majority-flip result regenerated; historical stability,
-ECE, and mean four-label confidence did not. Tie-breaking and dtype were tested
-and do not explain the discrepancy. The historical Qwen-vs-Llama calibration
-contrast is therefore unconfirmed until the Llama arm is rerun. No second human
-verifier has executed the package yet.
+**Result:** under four cyclic answer-choice reorderings, the regenerated Qwen harness changes its underlying answer on roughly **78%** of sampled questions in both bf16 and fp32; accuracy on flipping questions remains near chance.
 
-## Verification trail
+**Receipts:** [green verification workflow](https://github.com/GrobeStreet/mmlu-robustness-audit/actions) · [regeneration record](https://github.com/GrobeStreet/mmlu-robustness-audit/blob/main/regeneration/REGENERATION.md) · [provenance](https://github.com/GrobeStreet/mmlu-robustness-audit/blob/main/regeneration/PROVENANCE.json) · [frozen vs regenerated results](https://github.com/GrobeStreet/mmlu-robustness-audit/blob/main/RESULTS.md)
 
-- [Research portfolio and current public framing](https://robert-morong-research.netlify.app)
-- [Installable `de-stress-lab` package](https://pypi.org/project/de-stress-lab/)
-- [Canonical scientific reproduction archive](https://doi.org/10.5281/zenodo.21632602)
-- [Reusable software archive](https://doi.org/10.5281/zenodo.21633731)
-- [Frozen 2027 prediction ledger](https://github.com/GrobeStreet/de-stress-lab/tree/main/predictions)
+**Verification status:** headline robustness result regenerated with partial metric agreement; historical calibration/stability quantities that did not regenerate remain explicitly downgraded. No second human verifier yet.
 
-## What I build
+---
 
-Selection-aware diagnostics, null calibration, reproducible scientific
-software, benchmark audits, frozen evidence packages, and bounded agentic
-workflows. The through-line is simple: **make consequential claims inspectable
-before making them impressive.**
+### [ARC-AGI-2 — benchmark methodology & self-correction](https://github.com/GrobeStreet/arc-agi-2-occam-baseline)
 
-San Diego-based and open to research-engineering roles, applied-AI work, and
-serious lab collaborations. [Email me](mailto:bobbyopsassistant@gmail.com?subject=Research%20or%20AI%20collaboration).
+**Result:** the corrected same-holdout analysis finds **32.8% / 50.8% / 63.4%** demonstration reliability at k=1/2/3. On ambiguous cases, MDL selection beats random by **+11.1 points**, while the candidate oracle is only **+3.7 points** above MDL. The linked solver remains **0/167**.
+
+**Receipts:** [paper](https://github.com/GrobeStreet/arc-agi-2-occam-baseline/blob/main/ARC_Paper_Draft.pdf) · [pre-specified publish-regardless record](https://github.com/GrobeStreet/arc-agi-2-occam-baseline/blob/main/HYPOTHESIS-crossfold-v2.md) · [frozen machine-readable results](https://github.com/GrobeStreet/arc-agi-2-occam-baseline/tree/main/results) · [MIT-0 release](https://github.com/GrobeStreet/arc-agi-2-occam-baseline/blob/main/LICENSE)
+
+**Verification status:** corrected v2 evidence is public and frozen; engineering hardening is the next technical pass.
+
+## Evidence, not adjectives
+
+`2 Zenodo DOIs` · `PyPI package` · `5,000-mock null calibration` · `ReproHack #108` · `CI-tested research code` · `frozen manifests` · `publish-regardless records` · `failed claims retained` · `human verification status stated explicitly`
+
+## What I do
+
+**AI evaluation** — benchmark robustness, protocol reconstruction, evaluation failure modes, controlled reruns.
+
+**Statistical red teaming** — selection effects, null calibration, sensitivity analysis, holdout tests, influence diagnostics.
+
+**Reproducibility engineering** — frozen artifacts, hashes, CI, clean-room protocols, scientific software, evidence manifests.
+
+**AI-assisted research systems** — agentic workflows where implementation can be automated but the evidence trail remains inspectable by humans.
+
+## Working principle
+
+> **Reproduce → localize the load-bearing assumption → calibrate the null/selection process → define what would kill the story → publish what happens anyway.**
+
+That method is the through-line across cosmology, AI benchmark evaluation, and quantitative model auditing.
+
+## Work with me
+
+San Diego-based and open to **research-engineering roles, AI evaluation work, reproducibility collaborations, and serious quantitative research projects**.
+
+[Portfolio](https://robert-morong-research.netlify.app) · [Email](mailto:bobbyopsassistant@gmail.com?subject=Research%20or%20AI%20collaboration)
