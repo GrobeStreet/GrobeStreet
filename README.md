@@ -56,7 +56,7 @@ I reproduce published results, identify the assumptions carrying them, calibrate
 
 ## Working principle
 
-> **Reproduce → localize the load-bearing assumption → calibrate the null/selection process → define what would kill the story → publish what happens anyway.**
+> **Reproduce → localize the load-bearing assumption → calibrate the null/selection process → define what would falsify the story → publish what happens anyway.**
 
 That method is the through-line across cosmology, AI benchmark evaluation, and quantitative model auditing.
 
