@@ -27,23 +27,27 @@ independent human clean-room rerun pending.
 
 ### [ARC-AGI-2: how do we know a candidate program is right?](https://github.com/GrobeStreet/arc-agi-2-occam-baseline)
 
-The corrected, pre-registered v2 analysis finds **32.8%** k=1 demonstration
-reliability. On ambiguous cases, minimum-description-length selection gains
-**11.1 points** over random selection, while the candidate oracle is only
-**3.7 points** above MDL. The linked frozen solver remains **0/167**.
+The corrected v2 analysis finds **32.8%** k=1 demonstration reliability. On
+ambiguous cases, minimum-description-length selection gains **11.1 points** over
+random selection, while the candidate oracle is only **3.7 points** above MDL.
+The linked frozen solver remains **0/167**.
 
 **Evidence status:** corrected v2 code, frozen machine-readable results, paper,
-figures, and publish-regardless record are public.
+figures, and a pre-specified publish-regardless record are public.
 
-### [MMLU: robustness is not calibration](https://github.com/GrobeStreet/mmlu-robustness-audit)
+### [MMLU: option-order robustness](https://github.com/GrobeStreet/mmlu-robustness-audit)
 
-Cyclically reordering answer choices exposes a distinct failure mode: a model
-can become more accurate and better calibrated while still changing its
-underlying answer on a majority of questions.
+Cyclically reordering answer choices exposes a distinct robustness failure mode:
+the regenerated public harness changes its underlying answer on roughly **78%**
+of questions under both bf16 and fp32, while accuracy on flipping questions
+remains near chance.
 
-**Evidence status:** transparent reconstruction of the documented July 2026
-protocol and frozen reported results. The repository does not claim
-byte-for-byte identity with the unavailable original raw run.
+**Evidence status:** Qwen regeneration complete with **partial metric agreement**.
+Headline accuracy and the majority-flip result regenerated; historical stability,
+ECE, and mean four-label confidence did not. Tie-breaking and dtype were tested
+and do not explain the discrepancy. The historical Qwen-vs-Llama calibration
+contrast is therefore unconfirmed until the Llama arm is rerun. No second human
+verifier has executed the package yet.
 
 ## Verification trail
 
