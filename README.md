@@ -1,10 +1,15 @@
-### Robert "Bobby" Morong
-**Independent, reproducibility-first diligence for material AI &amp; statistical claims.**
+# Robert “Bobby” Morong
 
-I test whether a claimed AI / data / performance advantage is real, proprietary, and transferable — the independent evidence layer for investors underwriting a deal and operators deciding whether to deploy a workflow. Precommitted tests, deterministic verification (never an LLM judge), and an explicit "insufficient evidence" where the data can't carry the claim.
+Independent research engineer focused on one lane: **reproducible AI-claim verification for high-stakes decisions**.
 
-**Selected work**
-- Diligence method + worked public cases (SWE-bench, MMLU) → https://robert-morong-research.netlify.app/diligence.html
-- Re-runnable verifiers → https://github.com/GrobeStreet/ai-eval-work-sample
+I build small, inspectable evaluations that test whether AI, statistical, or performance claims survive reruns, corrected baselines, held-out checks, and adversarial scrutiny. The emphasis is verification over demos: frozen inputs, deterministic checks where possible, explicit uncertainty, and public correction when the evidence changes.
 
-_"Test the claim that carries the valuation."_
+Current work includes reproducible evals, AI-claim verification, and statistical red-teaming.
+
+## Selected work
+
+- [ARC-AGI-2 Occam Baseline](https://github.com/GrobeStreet/arc-agi-2-occam-baseline) — reproducible calibration and selection analysis for ARC program synthesis, including a published correction when the stricter design overturned the earlier result.
+- [De-Stress Lab](https://github.com/GrobeStreet/de-stress-lab) — reproducibility and statistical stress-testing work.
+- [Research site](https://robert-morong-research.netlify.app/) — methods, worked cases, and public evidence.
+
+The standard is simple: **test the claim that matters, preserve the receipts, and make the result rerunnable.**
