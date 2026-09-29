@@ -8,6 +8,7 @@ I build inspectable evaluations that test whether AI, statistical, benchmark, an
 
 - [RCV-Bench](https://github.com/GrobeStreet/rcv-bench) — a research-claim verification benchmark that distinguishes simple re-execution from provenance reasoning and robustness testing. The public corpus contains reproduced, deviation, fabricated, and fragile cases plus deterministic and real-agent baselines.
 - [Eval Invariance Engine](https://github.com/GrobeStreet/eval-invariance-engine) — reusable tooling for measuring whether an AI-evaluation score survives semantics-preserving perturbations, with CLI and Inspect AI integration.
+- [AI Reliability Test Kit](https://digitalvaultcourses.gumroad.com/l/ai-reliability-test-kit) — a downloadable evaluation harness that scores an LLM feature on accuracy (with confidence intervals), robustness, run-to-run consistency, and calibration, and emits a shareable Ship / Not-ready scorecard. Productized from the RCV-Bench discipline; runs offline or against OpenAI, Anthropic, and local models.
 - [Diligence Lab / AI-claim verification](https://robert-morong-research.netlify.app/verify/) — a bounded application of the same evidence discipline to technically material AI, data-moat, benchmark, and unit-economics claims before they are underwritten.
 
 ## Evidence cases
