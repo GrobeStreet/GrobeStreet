@@ -1,0 +1,22 @@
+name: Dedham roster repair
+
+on:
+  push:
+    branches:
+      - fix-dedham-yahoo-sync
+  pull_request:
+    paths:
+      - "dedham-yahoo-sync-repair/**"
+      - ".github/workflows/dedham-roster-repair.yml"
+
+jobs:
+  roster-parser-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run roster normalizer regression tests
+        working-directory: dedham-yahoo-sync-repair
+        run: node tests/normalize-rosters.test.mjs
