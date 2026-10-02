@@ -12,11 +12,6 @@ I build inspectable evaluations that test whether AI, statistical, benchmark, an
 4. [De-Stress Lab](https://github.com/GrobeStreet/de-stress-lab) — selection-aware scientific stress testing with installable software, frozen manifests, reproducibility tooling, and explicit evidence limits.
 5. [ARC-AGI-2 Occam Baseline](https://github.com/GrobeStreet/arc-agi-2-occam-baseline) — corrected same-holdout calibration and selection analysis, including a published reversal of the earlier optimistic result.
 
-## Applied verification
-
-- [Diligence Lab / AI-claim verification](https://robert-morong-research.netlify.app/verify/) — a bounded application of the same evidence discipline to technically material AI, data-moat, benchmark, and unit-economics claims before they are underwritten.
-- [AI Reliability Test Kit](https://digitalvaultcourses.gumroad.com/l/ai-reliability-test-kit) — a downloadable evaluation harness for accuracy, robustness, run-to-run consistency, calibration, and a shareable Ship / Not-ready scorecard.
-
 ## External validation wanted
 
 The next threshold is outside use, not more self-authored projects. I welcome:
