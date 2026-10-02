@@ -15,9 +15,9 @@ I build inspectable evaluations that test whether AI, statistical, benchmark, an
 ## External validation wanted
 
 The next threshold is outside use, not more self-authored projects. I welcome:
-- independent reruns of the MMLU or de-stress packages;
-- outside agents evaluated on RCV-Bench under a declared tool/network/isolation policy;
-- users who want to wrap an Inspect multiple-choice task with Eval Invariance Engine;
+- [independent reruns of the MMLU audit](https://github.com/GrobeStreet/mmlu-robustness-audit/issues/5) or de-stress package;
+- [outside agents evaluated on RCV-Bench](https://github.com/GrobeStreet/rcv-bench/issues/3) under a declared tool/network/isolation policy;
+- [outside Inspect users for Eval Invariance Engine](https://github.com/GrobeStreet/eval-invariance-engine/issues/1);
 - technical review, issue reports, and reproducibility PRs.
 
 The standard is: **test the claim that matters, preserve the receipts, publish the correction when the evidence changes, and make the surviving result rerunnable.**
